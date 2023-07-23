@@ -109,8 +109,7 @@ select {
 }
 
 body {
-  /* background: #fffcf8; */
-  background: #f2f2f2;
+  background: #fffcf8;
 }
 
 header {
@@ -195,7 +194,7 @@ header {
 .mobile-nav:before {
   content: '';
   position: absolute;
-  top: -24px;
+  top: -23px;
   right: 0;
   border-bottom: 24px solid white;
   border-left: 24px solid transparent;
@@ -219,12 +218,12 @@ header {
   opacity: 1;
 }
 
-.nav {
+.main-nav {
   transition: padding 100ms ease-in, box-shadow 100ms ease-in-out;
 }
 .scroll {
   padding-block: 1.5rem;
-  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes moveDown {
@@ -236,8 +235,3 @@ header {
     translate: 0% 100%;
   }
 }
-
-/* 
-https://www.youtube.com/watch?v=tTNxykEAPpA&ab_channel=CodingArtist
-triangle shape
-*/

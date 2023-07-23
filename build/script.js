@@ -22,10 +22,10 @@ window.addEventListener('resize', function () {
 
 window.onscroll = () => {
   if (document.body.scrollTop > 88 || document.documentElement.scrollTop > 88) {
-    document.querySelector('.nav').classList.add('scroll')
-    document.querySelector('.nav').classList.remove('py-[34px]')
+    document.querySelector('.main-nav').classList.add('scroll')
+    document.querySelector('.main-nav').classList.remove('py-[34px]')
   } else {
-    document.querySelector('.nav').classList.add('py-[34px]')
-    document.querySelector('.nav').classList.remove('scroll')
+    document.querySelector('.main-nav').classList.add('py-[34px]')
+    document.querySelector('.main-nav').classList.remove('scroll')
   }
 }

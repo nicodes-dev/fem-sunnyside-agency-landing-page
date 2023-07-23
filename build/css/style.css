@@ -592,11 +592,6 @@ video {
   margin-right: auto;
 }
 
-.my-\[1\.5rem\] {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-\[2rem\] {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -897,11 +892,6 @@ video {
   font-size: 40px;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.3125rem;
-}
-
 .font-black {
   font-weight: 900;
 }
@@ -978,6 +968,10 @@ video {
   letter-spacing: -0.1px;
 }
 
+.tracking-\[-0\.2\] {
+  letter-spacing: -0.2;
+}
+
 .tracking-\[-0\.2px\] {
   letter-spacing: -0.2px;
 }
@@ -1041,11 +1035,6 @@ video {
 .text-neutral-600 {
   --tw-text-opacity: 1;
   color: hsl(213 9% 39% / var(--tw-text-opacity));
-}
-
-.text-neutral-700 {
-  --tw-text-opacity: 1;
-  color: rgb(64 64 64 / var(--tw-text-opacity));
 }
 
 .text-neutral-800 {
@@ -1194,8 +1183,7 @@ select {
 }
 
 body {
-  /* background: #fffcf8; */
-  background: #f2f2f2;
+  background: #fffcf8;
 }
 
 header {
@@ -1282,7 +1270,7 @@ header {
 .mobile-nav:before {
   content: '';
   position: absolute;
-  top: -24px;
+  top: -23px;
   right: 0;
   border-bottom: 24px solid white;
   border-left: 24px solid transparent;
@@ -1306,13 +1294,13 @@ header {
   opacity: 1;
 }
 
-.nav {
+.main-nav {
   transition: padding 100ms ease-in, box-shadow 100ms ease-in-out;
 }
 
 .scroll {
   padding-block: 1.5rem;
-  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes moveDown {
@@ -1325,11 +1313,6 @@ header {
     translate: 0% 100%;
   }
 }
-
-/* 
-https://www.youtube.com/watch?v=tTNxykEAPpA&ab_channel=CodingArtist
-triangle shape
-*/
 
 .hover\:bg-\[neutral-100\]:hover {
   background-color: neutral-100;

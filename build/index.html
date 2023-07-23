@@ -22,8 +22,7 @@
 
   <body>
     <nav
-      class="nav fixed top-0 z-20 flex w-full items-center justify-between bg-[#3ebfff] px-6 py-[34px] transition-[padding] tablet:pl-10 tablet:pr-12"
-      id="nav"
+      class="main-nav fixed top-0 z-20 flex w-full items-center justify-between bg-[#3ebfff] px-6 py-[34px] transition-[padding] tablet:pl-10 tablet:pr-12"
     >
       <img src="./assets/images/logo.svg" alt="logo" class="lg:w-[170px]" />
       <button class="btn-menu transition-opacity tablet:hidden">
@@ -53,7 +52,6 @@
           >
         </li>
       </ul>
-
       <div
         class="mobile-nav left absolute right-0 top-[88px] z-10 mx-[24px] mt-6 flex w-[calc(100%-48px)] flex-col items-center justify-center gap-y-8 bg-white py-[39px] font-barlow text-[20px] font-semibold leading-[25px] tracking-[0.143px] text-neutral-500"
       >
@@ -84,9 +82,7 @@
       </picture>
     </header>
     <main>
-      <!--  -->
       <section class="col-span-full grid bg-neutral-100 tablet:grid-cols-2">
-        <!-- div1 -->
         <div
           class="grid text-center tablet:col-span-full tablet:grid-cols-2 tablet:text-left lg:justify-items-start"
         >
@@ -99,7 +95,7 @@
               Transform your brand
             </h2>
             <p
-              class="mx-auto mb-8 mt-6 max-w-[520px] font-barlow text-[18px] leading-[30px] tracking-[0.129px] text-neutral-500 tablet:ml-0 tablet:mr-auto tablet:max-w-[430px] lg:max-w-[470px] 2xl:max-w-none 2xl:pr-[100px]"
+              class="mx-auto mb-8 mt-6 max-w-[520px] font-barlow text-[18px] leading-[30px] tracking-[-0.2px] text-neutral-500 tablet:ml-0 tablet:mr-auto tablet:max-w-[430px] lg:max-w-[470px] 2xl:max-w-none 2xl:pr-[100px]"
             >
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
@@ -111,7 +107,6 @@
               >learn more</a
             >
           </div>
-          <!-- <div class="order-1 md:order-2"> -->
           <picture class="order-1 w-full md:order-2 3xl:h-[600px]">
             <source
               media="(min-width:950px)"
@@ -124,11 +119,10 @@
             <img
               src="./assets/images/mobile/image-transform.jpg"
               class="h-full w-full"
+              alt="chicken egg"
             />
           </picture>
-          <!-- </div> -->
         </div>
-        <!-- div2 -->
         <div
           class="grid text-center tablet:col-span-full tablet:grid-cols-2 tablet:text-left lg:justify-items-start"
         >
@@ -141,7 +135,7 @@
               Stand out to the right audience
             </h2>
             <p
-              class="mx-auto mb-8 mt-6 max-w-[520px] font-barlow text-[18px] leading-[30px] tracking-[0.129px] text-neutral-500 tablet:ml-0 tablet:mr-auto tablet:max-w-[430px] lg:max-w-[470px] 2xl:max-w-none"
+              class="mx-auto mb-8 mt-6 max-w-[520px] font-barlow text-[18px] leading-[30px] tracking-[-0.2px] text-neutral-500 tablet:ml-0 tablet:mr-auto tablet:max-w-[430px] lg:max-w-[470px] 2xl:max-w-none"
             >
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
@@ -153,7 +147,6 @@
               >learn more</a
             >
           </div>
-          <!-- <div class="order-1 h-full w-full"> -->
           <picture class="order-1 h-full w-full 3xl:h-[600px]">
             <source
               media="(min-width:950px)"
@@ -166,11 +159,10 @@
             <img
               src="./assets/images/desktop/image-stand-out.jpg"
               class="h-full w-full"
+              alt="red colored glass"
             />
           </picture>
-          <!-- </div> -->
         </div>
-        <!-- div3 -->
       </section>
       <section class="grid lg:grid-cols-2">
         <div
@@ -205,25 +197,23 @@
           </p>
         </div>
       </section>
-      <!-- testimonials -->
       <section class="px-[24px] pt-[64px] text-center lg:px-0 lg:pt-[160px]">
         <h3
           class="mb-[64px] font-fraunces text-[1rem] font-black uppercase leading-[20px] tracking-[4px] text-neutral-400 tablet:text-[18px] tablet:leading-[25px] lg:mb-[81px]"
         >
           client testimonials
         </h3>
-        <!-- grid -->
         <div
           class="mx-auto grid max-w-[1110px] gap-x-[30px] lg:mb-[160px] lg:grid-cols-12 3xl:max-w-[1440px]"
         >
-          <!-- div1 -->
           <div class="mb-[64px] lg:col-span-6 lg:mb-0 xl:col-span-4">
             <img
               src="./assets/images/image-emily.jpg"
               class="mx-auto aspect-square w-[72px] rounded-full"
+              alt="Emily R."
             />
             <p
-              class="mx-auto my-[2rem] max-w-[700px] font-barlow text-[18px] font-semibold leading-[2rem] tracking-[-0.129px] text-neutral-600 lg:mb-[69px] lg:mt-[58px] lg:max-w-[400px]"
+              class="mx-auto my-[2rem] max-w-[700px] font-barlow text-[18px] font-semibold leading-[2rem] tracking-[-0.2] text-neutral-600 lg:mb-[69px] lg:mt-[58px] lg:max-w-[400px]"
             >
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
@@ -245,9 +235,10 @@
             <img
               src="./assets/images/image-thomas.jpg"
               class="mx-auto aspect-square w-[72px] rounded-full"
+              alt="Thomas S."
             />
             <p
-              class="mx-auto my-[2rem] max-w-[700px] font-barlow text-[18px] font-semibold leading-[2rem] tracking-[-0.129px] text-neutral-600 lg:mb-[69px] lg:mt-[58px] lg:max-w-[400px]"
+              class="mx-auto my-[2rem] max-w-[700px] font-barlow text-[18px] font-semibold leading-[2rem] tracking-[-0.2] text-neutral-600 lg:mb-[69px] lg:mt-[58px] lg:max-w-[400px]"
             >
               Sunnyside’s enthusiasm coupled with their keen interest in our
               brand’s success made it a satisfying and enjoyable experience.
@@ -270,9 +261,10 @@
             <img
               class="mx-auto aspect-square w-[72px] rounded-full"
               src="./assets/images/image-jennie.jpg"
+              alt="Jennie F."
             />
             <p
-              class="mx-auto my-[2rem] max-w-[700px] font-barlow text-[18px] font-semibold leading-[2rem] tracking-[-0.129px] text-neutral-600 lg:mb-[69px] lg:mt-[58px] lg:max-w-[400px]"
+              class="mx-auto my-[2rem] max-w-[700px] font-barlow text-[18px] font-semibold leading-[2rem] tracking-[-0.2] text-neutral-600 lg:mb-[69px] lg:mt-[58px] lg:max-w-[400px]"
             >
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
@@ -290,9 +282,7 @@
           </div>
         </div>
       </section>
-      <!-- showcase -->
       <section class="grid grid-cols-2 tablet:grid-cols-4">
-        <!-- grid gallery -->
         <picture class="col-span-1">
           <source
             media="(min-width:950px)"
@@ -302,13 +292,12 @@
             media="(min-width:320px)"
             srcset="./assets/images/mobile/image-gallery-milkbottles.jpg"
           />
-
           <img
             src="./assets/images/mobile/image-gallery-milkbottles.jpg"
             class="h-full w-full"
+            alt="bottles of milk"
           />
         </picture>
-
         <picture class="col-start-2 col-end-3">
           <source
             media="(min-width:950px)"
@@ -318,13 +307,12 @@
             media="(min-width:320px)"
             srcset="./assets/images/mobile/image-gallery-orange.jpg"
           />
-
           <img
             src="./assets/images/mobile/image-gallery-orange.jpg"
             class="h-full w-full"
+            alt="sliced orange"
           />
         </picture>
-
         <picture class="col-span-1 tablet:col-start-3 tablet:col-end-4">
           <source
             media="(min-width:950px)"
@@ -334,13 +322,12 @@
             media="(min-width:320px)"
             srcset="./assets/images/mobile/image-gallery-cone.jpg"
           />
-
           <img
             src="./assets/images/mobile/image-gallery-cone.jpg"
             class="h-full w-full"
+            alt="icecream cone"
           />
         </picture>
-
         <picture
           class="col-start-2 col-end-3 tablet:col-start-4 tablet:col-end-5"
         >
@@ -352,10 +339,10 @@
             media="(min-width:320px)"
             srcset="./assets/images/mobile/image-gallery-sugar-cubes.jpg"
           />
-
           <img
             src="./assets/images/mobile/image-gallery-sugar-cubes.jpg"
             class="h-full w-full"
+            alt="sugar cubes"
           />
         </picture>
       </section>
@@ -363,7 +350,11 @@
     <footer
       class="relative bg-[hsla(168,44%,70%,1)] pb-[80px] pt-[64px] md:py-[72px]"
     >
-      <img src="./assets/images/logo.svg" class="footer-logo" />
+      <img
+        src="./assets/images/logo.svg"
+        class="footer-logo"
+        alt="footer logo"
+      />
       <nav class="mb-[88px] mt-[40px]">
         <ul
           class="flex w-full items-center justify-center gap-x-[57px] font-barlow text-[18px] font-semibold leading-[25px] tracking-[-0.129px] text-[hsla(167,34%,41%,1)]"
@@ -395,17 +386,17 @@
         </ul>
       </nav>
       <nav class="flex w-full items-center justify-center gap-x-[28px]">
-        <a href="#" class="footer-link">
-          <img src=" ./assets/images/icon-facebook.svg" />
+        <a href="#" class="footer-link" aria-label="facebook">
+          <img src=" ./assets/images/icon-facebook.svg" alt="facebook logo" />
         </a>
-        <a href="#" class="footer-link">
-          <img src="./assets/images/icon-instagram.svg" />
+        <a href="#" class="footer-link" aria-label="instagram">
+          <img src="./assets/images/icon-instagram.svg" alt="instagram logo" />
         </a>
-        <a href="#" class="footer-link">
-          <img src="./assets/images/icon-twitter.svg" />
+        <a href="#" class="footer-link" aria-label="twitter">
+          <img src="./assets/images/icon-twitter.svg" alt="twitter logo" />
         </a>
-        <a href="#" class="footer-link">
-          <img src="./assets/images/icon-pinterest.svg" />
+        <a href="#" class="footer-link" aria-label="pinterest">
+          <img src="./assets/images/icon-pinterest.svg" alt="pinterest logo" />
         </a>
       </nav>
       <div
@@ -429,12 +420,4 @@
       </div>
     </footer>
   </body>
-  <!-- <footer
-  class="absolute bottom-0 my-[1.5rem] hidden px-6 text-center text-base font-medium text-neutral-700 tablet:col-span-full lg:px-0 min-screen:block">
-  Challenge by
-  <a href="https://www.frontendmentor.io?ref=challenge" class="font-bold text-primary-blue-200"
-    target="_blank">Frontend Mentor</a>. Coded by
-  <a href="https://www.frontendmentor.io/profile/nicodes-dev" class="font-bold text-primary-blue-200">Nico
-    Ilarina</a>.
-</footer> -->
 </html>
