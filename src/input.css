@@ -109,7 +109,8 @@ select {
 }
 
 body {
-  background: #fffcf8;
+  /* background: #fffcf8; */
+  background: #f2f2f2;
 }
 
 header {
