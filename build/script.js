@@ -21,16 +21,11 @@ window.addEventListener('resize', function () {
 })
 
 window.onscroll = () => {
-  // console.log(document.body.scrollTop)
-  // console.log(document.documentElement.scrollTop)
-  // console.log(document.querySelector('.nav'))
-
   if (document.body.scrollTop > 88 || document.documentElement.scrollTop > 88) {
     document.querySelector('.nav').classList.add('scroll')
-    document.querySelector('.nav').classList.remove('py-8')
+    document.querySelector('.nav').classList.remove('py-[34px]')
   } else {
-    // console.log('else', document.querySelector('.nav'))
-    document.querySelector('.nav').classList.add('py-8')
+    document.querySelector('.nav').classList.add('py-[34px]')
     document.querySelector('.nav').classList.remove('scroll')
   }
 }

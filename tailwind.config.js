@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'header-bg': "url('../assets/images/desktop/image-header.jpg')",
+        'header-bg': "url('../assets/images/mobile/image-header.jpg')",
       },
       fontFamily: {
         fraunces: ['Fraunces', 'serif'],

@@ -827,14 +827,18 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-\[34px\] {
+  padding-top: 34px;
+  padding-bottom: 34px;
 }
 
 .py-\[39px\] {
   padding-top: 39px;
   padding-bottom: 39px;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pb-\[59px\] {
@@ -847,10 +851,6 @@ video {
 
 .pt-\[64px\] {
   padding-top: 64px;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -900,10 +900,6 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.3125rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .font-black {
@@ -1023,6 +1019,10 @@ video {
   color: hsl(167 40% 24% / var(--tw-text-opacity));
 }
 
+.text-cyan-500\/75 {
+  color: hsl(167 40% 24% / 0.75);
+}
+
 .text-neutral-100 {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
@@ -1051,29 +1051,6 @@ video {
 .text-neutral-800 {
   --tw-text-opacity: 1;
   color: hsl(212 27% 19% / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-accent-yellow {
-  --tw-text-opacity: 1;
-  color: hsl(51 100% 49% / var(--tw-text-opacity));
-}
-
-.text-accent-red {
-  --tw-text-opacity: 1;
-  color: hsl(7 99% 70% / var(--tw-text-opacity));
-}
-
-.text-white\/75 {
-  color: rgb(255 255 255 / 0.75);
-}
-
-.text-cyan-500\/75 {
-  color: hsl(167 40% 24% / 0.75);
 }
 
 .opacity-75 {
@@ -1226,13 +1203,18 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  background-image: url('../assets/images/desktop/image-header.jpg');
+  background-image: url('../assets/images/mobile/image-header.jpg'),
+    url('../assets/images/desktop/image-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
+  transition: background-image 100ms ease-in-out;
 }
 
 @media only screen and (min-width: 880px) {
+  header {
+    background-image: url('../assets/images/desktop/image-header.jpg');
+  }
 }
 
 .link {
@@ -1291,12 +1273,6 @@ header {
 .arrow-down {
   animation: moveDown 1500ms ease-in-out infinite alternate;
 }
-
-/*
-.mobile-nav {
-  clip-path: polygon(90% 8%, 100% 0%, 100% 100%, 0% 100%, 0 8%);
-}
-*/
 
 .mobile-nav:before {
   content: '';
@@ -1386,10 +1362,6 @@ triangle shape
     order: 2;
   }
 
-  .md\:block {
-    display: block;
-  }
-
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1474,6 +1446,14 @@ triangle shape
     padding-right: 2.5rem;
   }
 
+  .tablet\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .tablet\:pr-12 {
+    padding-right: 3rem;
+  }
+
   .tablet\:text-left {
     text-align: left;
   }
@@ -1543,6 +1523,10 @@ triangle shape
 
   .lg\:mt-\[64px\] {
     margin-top: 64px;
+  }
+
+  .lg\:min-h-\[800px\] {
+    min-height: 800px;
   }
 
   .lg\:w-\[170px\] {
@@ -1674,11 +1658,5 @@ triangle shape
 
   .\33xl\:max-w-\[1440px\] {
     max-width: 1440px;
-  }
-}
-
-@media (min-width: 700px) and (min-height: 630px) {
-  .min-screen\:block {
-    display: block;
   }
 }
