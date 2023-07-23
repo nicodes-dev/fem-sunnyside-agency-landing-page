@@ -108,6 +108,10 @@ select {
   }
 }
 
+body {
+  background: #fffcf8;
+}
+
 header {
   position: relative;
   font-family: 'Fraunces', serif;
